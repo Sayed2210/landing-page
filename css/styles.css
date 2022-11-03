@@ -14,14 +14,14 @@ body {
     background: rgb(136,203,171);
     background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
     margin: 0;
-    font-family: 'Merriweather', serif;
+    font-family: 'Cairo', sans-serif;
     color: #fff;
 }
 
 
 /* Typeography General*/
 h1 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 3em;
     margin: 2em 1rem;
 }
@@ -35,13 +35,13 @@ h1 {
 
 h2 {
     border-bottom: 1px solid #cc1;
-    font-family: 'Oxygen', Sans-Serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 3em;
     color: #fff;
 }
 
 p {
-    line-height: 1.6em;
+    line-height: 2em;
     color: #eee;
 }
 
@@ -91,22 +91,24 @@ section {
 
 /* Header Styles */
 .page__header {
-    background: #fff;
+    background: rgb(59 88 195);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 5;
+    box-shadow: 0px -2px 6px -3px #000 inset;
 }
 
 /* Footer Styles */
 .page__footer {
-    background: #000;
+    background: rgba(136,203,171,1);
     padding: 3em;
     color: #fff;
+    box-shadow: 0px 2px 6px -3px #000 inset;
 }
 
-.page__footer p{
-    color: #fff;
+.page__footer p {
+        color: #fff;
 }
 
 
@@ -221,4 +223,25 @@ section.your-active-class .landing__container::after {
 		           translate(-1em) 
 		           rotate(-360deg);
 	}
+}
+
+/*scroll top button style*/
+#scrollBtn {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/892/892692.png);
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 55%;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: ease 1.5s, transform 0.5s;
+    scroll-behavior: smooth;
 }
